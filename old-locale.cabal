@@ -33,3 +33,5 @@ Library
 
     build-depends: base >= 4.2 && < 5
     ghc-options: -Wall
+  if impl(ghc >= 9.0.3)
+       default-extensions: PartialTypeConstructors
